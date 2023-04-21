@@ -146,21 +146,6 @@ sudo mv julia-1.8.5 /opt/
 sudo ln -s /opt/julia-1.8.5/bin/julia /usr/bin/julia
 
 
-distro=$(if echo " una vanessa focal jammy bullseye vera uma" | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
-wget -O- https://deb.librewolf.net/keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
-sudo tee /etc/apt/sources.list.d/librewolf.sources << EOF > /dev/null
-Types: deb
-URIs: https://deb.librewolf.net
-Suites: $distro
-Components: main
-Architectures: amd64
-Signed-By: /usr/share/keyrings/librewolf.gpg
-EOF
-
-sudo apt update
-sudo apt install librewolf -y
-
-
 ### thinlinc
 wget https://www.cendio.com/downloads/clients/thinlinc-client_4.14.0-2324_amd64.deb
 sudo dpkg -i thinlinc-client_4.14.0-2324_amd64.deb
@@ -234,7 +219,7 @@ mv PRO-Dark-XFCE-Edition/PRO-dark-XFCE-4.14 .
 rm -rf PRO-Dark-XFCE-Edition
 
 ## add Terminator themes
-wget https://gist.githubusercontent.com/perfecto25/a69778b0ab86bdc17f6d4a164261eea7/raw/829ad956ee4eac615afe6d678b9d32e09ab72eee/terminator_config -O ~/.config/terminator/config
+cp files/terminator_config ~/.config/terminator/config
 
 ### Swapiness
 sudo echo "vm.swappiness = 10" >> /etc/sysctl.conf

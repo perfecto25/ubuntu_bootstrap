@@ -1,0 +1,80 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#0c293d"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#adffcc"
+    scrollback_infinite = True
+  [[dev]]
+    background_color = "#1a2b20"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+  [[yellow]]
+    background_color = "#d6d396"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#63452c"
+    scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+  [[purple]]
+    background_color = "#1f1d45"
+    cursor_color = "#efbf38"
+    foreground_color = "#f8dcc0"
+    scrollback_infinite = True
+    palette = "#050404:#bd0013:#4ab118:#e7741e:#0f4ac6:#665993:#70a598:#f8dcc0:#4e7cbf:#fc5f5a:#9eff6e:#efc11a:#1997c6:#9b5953:#c8faf4:#f6f5fb"
+    background_image = None
+  [[dev2]]
+    background_color = "#374031"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#f9f06b"
+    scrollback_infinite = True
+    palette = "#2e3436:#f66151:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#f6f5f4:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+  [[solarized]]
+    icon_bell = False
+    background_color = "#002b36"
+    background_darkness = 0.96
+    background_type = transparent
+    cursor_color = "#eee8d5"
+    font = Monospace 11
+    foreground_color = "#e6e0da"
+    scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    split_to_group = True
+    background_image = None
+  [[white]]
+    background_color = "#f7f7f7"
+    cursor_color = "#4a4543"
+    foreground_color = "#4a4543"
+    scrollback_infinite = True
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+    background_image = None
+  [[Miami]]
+    background_color = "#10111b"
+    cursor_color = "#aaaaaa"
+    scrollback_infinite = True
+    palette = "#2e3436:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#d3d7cf:#555753:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#eeeeec"
+  [[Material dk]]
+    background_color = "#1E282C"
+    cursor_color = "#657B83"
+    foreground_color = "#C3C7D1"
+    scrollback_infinite = True
+    palette = "#073641:#eb606b:#c3e88d:#f7eb95:#80cbc3:#ff2490:#aeddff:#ffffff:#002b36:#eb606b:#c3e88d:#f7eb95:#7dc6bf:#6c71c3:#34434d:#ffffff"
+    background_image = None
+  [[sulfur dk blue]]
+    background_color = "#202746"
+    cursor_color = "#979db4"
+    foreground_color = "#979db4"
+    scrollback_infinite = True
+    palette = "#202746:#c94922:#ac9739:#c08b30:#3d8fd1:#6679cc:#22a2c9:#979db4:#6b7394:#c76b29:#293256:#5e6687:#898ea4:#dfe2f1:#9c637a:#f5f7ff"
+    background_image = None
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
