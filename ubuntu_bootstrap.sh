@@ -87,6 +87,7 @@ sudo apt install typecatcher -y
 sudo apt install tk-dev -y
 sudo apt install vim -y
 sudo apt install virtualbox -y
+sudo apt install flatpak -y
 sudo apt install vlc -y
 sudo apt install jq -y
 sudo apt install zlib1g-dev -y
@@ -223,6 +224,10 @@ cp files/terminator_config ~/.config/terminator/config
 
 ### Swapiness
 sudo echo "vm.swappiness = 10" >> /etc/sysctl.conf
+
+## flatpak sources
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 
 
 echo "Install slack manually, snap pkg has broken icon"
