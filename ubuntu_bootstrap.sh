@@ -132,10 +132,12 @@ then
 else
   echo "Laptop - setting CPU to powersave"
   for ((i=0; i<$(nproc); i++)); do sudo cpufreq-set -g powersave -c $i; done
+  
+  # disable screensaver for long battery usage
+  echo "xset s off" >> ~/.xsession
 fi
 
-# disable screensaver for long battery usage
-echo "xset s off" >> ~/.xsession
+
 
 ## librewolf browser
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
