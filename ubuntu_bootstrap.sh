@@ -44,7 +44,7 @@ sudo apt -y update
 
 ### PKGS
 sudo apt install -y software-properties-common apt-transport-https wget 
-sudo apt install -y shotwell
+sudo apt install -y nomacs
 sudo apt install brave-browser -y
 sudo apt install build-essential -y
 sudo apt install stacer -y
