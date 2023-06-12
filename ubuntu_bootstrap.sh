@@ -75,7 +75,6 @@ sudo apt install net-tools -y
 sudo apt install nmap -y
 sudo apt install network-manager-openvpn -y
 sudo apt install network-manager-openvpn-gnome -y
-sudo apt install pinta -y
 sudo apt install playonlinux -y
 sudo apt install redshift -y
 sudo apt install redshift-gtk -y
@@ -177,6 +176,7 @@ sudo snap install crystal
 sudo snap install onlyoffice-desktopeditors
 sudo snap install remmina
 sudo snap install ksnip
+sudo snap install pinta
 
 ## photoshop CC
 git clone https://github.com/Gictorbit/photoshopCClinux.git
