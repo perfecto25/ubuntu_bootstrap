@@ -91,7 +91,7 @@ sudo apt install flatpak -y
 sudo apt install vlc -y
 sudo apt install jq -y
 sudo apt install zlib1g-dev -y
-sudo apt install wine64 wine32 -y
+sudo apt install wine64 wine32 winetricks -y
 sudo apt-get install msttcorefonts -y
 sudo apt install code -y
 sudo apt install filezilla -y
@@ -177,7 +177,10 @@ sudo snap install crystal
 sudo snap install onlyoffice-desktopeditors
 sudo snap install remmina
 sudo snap install ksnip
-sudo snap install photogimp
+
+## photoshop CC
+git clone https://github.com/Gictorbit/photoshopCClinux.git
+# run setup.sh to install PS
 
 # set VIM
 echo -e "colo desert\nset number" >> ~/.vimrc
