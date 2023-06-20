@@ -215,14 +215,19 @@ chmod +x /usr/local/bin/move-to-next-monitor
 mkdir ~/AppImages
 cd ~/AppImages
 wget https://github.com/balena-io/etcher/releases/download/v1.14.3/balenaEtcher-1.14.3-x64.AppImage
-chmod +x balenaEtcher*
+chmod +x balenaEtcher* 
 
 ## Themes
 mkdir ~/.themes
 cd ~/.themes
 git clone https://github.com/paullinuxthemer/PRO-Dark-XFCE-Edition.git
+git clone https://github.com/i-mint/LightningBug.git
 mv PRO-Dark-XFCE-Edition/PRO-dark-XFCE-4.14 .
+mv LightningBug/Lightningbug-Solid .
+mv LightningBug/Lightningbug-Dark .
+mv LightningBug/Lightningbug-Solid-Dark .
 rm -rf PRO-Dark-XFCE-Edition
+rm -rf LightningBug
 
 ## add Terminator themes
 cp files/terminator_config ~/.config/terminator/config
