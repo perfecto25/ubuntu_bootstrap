@@ -98,6 +98,7 @@ sudo apt install file-roller -y
 sudo apt install gedit -y
 sudo apt install openssh-server -y
 sudo apt install vagrant -y
+sudo apt install valgrind -y
 sudo apt-get install nfs-common nfs-kernel-server
 vagrant plugin install vagrant-vbguest vagrant-disksize
 
@@ -185,8 +186,14 @@ sudo snap install ksnip
 sudo snap install pinta
 
 ## photoshop CC
-git clone https://github.com/Gictorbit/photoshopCClinux.git
-# run setup.sh to install PS
+sudo dpkg --add-architecture i386 
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/mantic/winehq-mantic.sources
+sudo apt update && sudo apt install --install-recommends winehq-stable
+echo "follow instructions to install PSCC here:  https://github.com/CSMarckitus/Photoshop"
+
 
 # set VIM
 echo -e "colo desert\nset number" >> ~/.vimrc
